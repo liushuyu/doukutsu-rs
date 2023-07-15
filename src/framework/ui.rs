@@ -120,7 +120,7 @@ impl UI {
         scene.imgui_draw(&mut self.components, state, ctx2, &mut ui)?;
 
         prepare_imgui(ctx2, &ui);
-        let draw_data = ui.render();
+        let draw_data = imgui.render();
         render_imgui(ctx2, draw_data)?;
 
         Ok(())
